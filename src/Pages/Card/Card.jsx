@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router';
 
 const Card = ({Lawyer}) => {
   const{experience,image,licenseNumber,name, 
-    specialty
+    specialty,id
   }=Lawyer||{}
     return (
         <div className="w-full max-w-sm bg-white rounded-xl shadow-md p-4 mx-10">
@@ -18,7 +19,14 @@ const Card = ({Lawyer}) => {
             <h2 className="text-lg font-semibold">{name}</h2>
             <p className="text-sm text-gray-500">{specialty}</p>
             <p className="text-sm text-gray-400">License No: {licenseNumber}</p>
-            <a href="#" className="text-blue-600 text-sm font-medium hover:underline">View Details</a>
+          <div className='my-2'>
+            <Link to={`/lawyers-details/:${id}`}>
+            <button className='text-[#176AE5]
+            rounded-full border bg-[rgba(23,106,29,0.2)] p-1 '>
+            View Details
+            </button>
+            </Link>
+          </div>
           </div>
         </div>
       </div>

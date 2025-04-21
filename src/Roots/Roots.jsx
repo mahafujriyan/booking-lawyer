@@ -4,11 +4,14 @@ import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
 
 const Roots = () => {
+    const hideFooterOnRoutes = ['/contacts'];
+    const shouldHideFooter = hideFooterOnRoutes.includes(location.pathname);
+
     return (
         <div>
             <Navbar></Navbar>
            <Outlet></Outlet>
-            <Footer></Footer>
+           {!shouldHideFooter && <Footer />}
             
         </div>
     );

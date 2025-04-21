@@ -1,5 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 import { Link } from 'react-router';
+
 
 const Navbar = () => {
     return (
@@ -12,10 +14,16 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><Link>Home</Link></li>
-      <li><Link>My-Bookings</Link></li>
-      <li><Link>Blogs</Link></li>
-      <li><Link>Contact Us</Link></li>
+        <li><NavLink>Home</NavLink></li>
+      <li><NavLink>My-Bookings</NavLink></li>
+      <li><NavLink
+       className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      } to='/blogs'>Blogs</NavLink></li>
+      <li><NavLink  className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      }
+       to='*' >Contact Us</NavLink></li>
       </ul>
     </div>
     <div className='flex gap-2'>
@@ -30,10 +38,16 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><Link>Home</Link></li>
-      <li><Link>My-Bookings</Link></li>
-      <li><Link>Blogs</Link></li>
-      <li><Link>Contact Us</Link></li>
+      <li><NavLink>Home</NavLink></li>
+      <li><NavLink  className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      }>My-Bookings</NavLink></li>
+      <li><NavLink  className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      } to='/blogs'>Blogs</NavLink></li>
+      <li><NavLink  className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      } to='/contacts'>Contact Us</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">

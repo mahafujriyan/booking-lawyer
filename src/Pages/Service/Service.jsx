@@ -1,0 +1,37 @@
+import React from 'react';
+
+const Service = () => {
+    return (
+        <div>
+         <div className='flex flex-col justify-center items-center'>
+         <h1 className='font-bold text-[40px] text-center'>We Provide Best Law Services</h1>
+         <p>Our platform connects you with verified, experienced Lawyers across various specialities — all at your convenience. </p>
+         </div>
+         <div className='grid grid-cols-2 md:grid-cols-4 gap-2 mx-10 my-3'>
+            <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
+                <img src="/asset/success-doctor.png" alt="" />
+                <h1 className='text-2xl font-bold'>199+</h1>
+                <p>Total Lawyer</p>
+
+            </div>
+            <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
+                <img src="/asset/success-review.png" alt="" />
+                <h1 className='text-2xl font-bold'>467+</h1>
+                <p>Total Reviews</p>
+            </div>
+            <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
+                <img src="/asset/success-patients.png" alt="" />
+                <h1 className='text-2xl font-bold'>1900+</h1>
+                <p>Cases Initiated</p>
+            </div>
+            <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
+                <img src="/asset/success-staffs.png" alt="" />
+                <h1 className='text-2xl font-bold'>300+</h1>
+                <p>Total Stuffs</p>
+            </div>
+         </div>
+        </div>
+    );
+};
+
+export default Service;
