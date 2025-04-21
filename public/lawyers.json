@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/hRppBBQ1/Asaduzaman-Bhuiyan.jpg",
+      "name": "Asaduzaman Bhuiyan",
+      "gender": "Male",
+      "specialty": "Criminal Law",
+      "experience": "8 years",
+      "licenseNumber": "CLX-2398",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Friday"],
+      "fees": "7500"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/BKCwBpwD/BARRISTER-NUZHATH-ISLAM.jpg",
+      "name": "Sujana Tia",
+      "gender": "Female",
+      "specialty": "Intellectual Property",
+      "experience": "7 years",
+      "licenseNumber": "IPR-3345",
+      "availableDays": ["Monday", "Tuesday", "Thursday", "Friday"],
+      "fees": "9000"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/BKT4hCdC/e.jpg",
+      "name": "Anisur Rahman",
+      "gender": "Male",
+      "specialty": "Family Law",
+      "experience": "5 years",
+      "licenseNumber": "FAM-7624",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Friday"],
+      "fees": "4200"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/QFvdm6y1/john-profile-pic.jpg",
+      "name": "Naila John",
+      "gender": "Male",
+      "specialty": "Immigration Law",
+      "experience": "9 years",
+      "licenseNumber": "IML-5891",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "fees": "2500"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/R4S8yRC5/mark.jpg",
+      "name": "Jessica Martinez",
+      "gender": "Female",
+      "specialty": "Environmental Law",
+      "experience": "6 years",
+      "licenseNumber": "ENV-2210",
+      "availableDays": ["Monday", "Wednesday", "Thursday", "Saturday"],
+      "fees": "7000"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/7tw26bJY/Matthew-Persson-Barrister-325x400.jpg",
+      "name": "David Lee",
+      "gender": "Male",
+      "specialty": "Tax Law",
+      "experience": "10 years",
+      "licenseNumber": "TAX-4011",
+      "availableDays": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+      "fees": "5000"
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/JJgG4sH/PCJ-profile-2021.jpg",
+      "name": "Michael Chen",
+      "gender": "Male",
+      "specialty": "Corporate Law",
+      "experience": "12 years",
+      "licenseNumber": "COR-1123",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"],
+      "fees": "3000"
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/ds2348tS/Raina-Noor.jpg",
+      "name": "Raina Noor",
+      "gender": "Female",
+      "specialty": "Civil Rights Law",
+      "experience": "6 years",
+      "licenseNumber": "CIV-9283",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "fees": "4000"
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co.com/FLTWYZmW/partho.jpg",
+      "name": "Andalib Haque Partho",
+      "gender": "Male",
+      "specialty": "Employment Law",
+      "experience": "11 years",
+      "licenseNumber": "EMP-7210",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      "fees": "12000"
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co.com/tw6N8xJc/summon.jpg",
+      "name": "Saidur Rahaman Sumon",
+      "gender": "Male",
+      "specialty": "Real Estate Law",
+      "experience": "4 years",
+      "licenseNumber": "REA-5532",
+      "availableDays": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+      "fees": "8000"
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co.com/WNyfhJqb/Zubair-Ahmed-Bhuiyan.jpg",
+      "name": "Jason Miller",
+      "gender": "Male",
+      "specialty": "Bankruptcy Law",
+      "experience": "9 years",
+      "licenseNumber": "BNK-4411",
+      "availableDays": ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "fees": "5800"
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co.com/G4LFT423/Rumeen-Farhana.jpg",
+      "name": "Rumeen_Farhana",
+      "gender": "Female",
+      "specialty": "Healthcare Law",
+      "experience": "7 years",
+      "licenseNumber": "HLT-7722",
+      "availableDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday"],
+      "fees": "10000"
+    }
+  ]
+  
