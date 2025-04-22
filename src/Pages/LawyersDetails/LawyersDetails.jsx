@@ -1,15 +1,19 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
+
+import { addAppoint } from '../../Utility/Index';
+
 
 
 const LawyersDetails = () => {
     const data = useLoaderData();
-    const {id} = useParams();
-    
-    console.log(data)
-    const singleLawyer = data.find((lawyer) => lawyer.id = id);
-    
-    console.log(singleLawyer)
+    const { id } = useParams();
+    console.log(data,id)
+
+  
+    const singleLawyer = data.find((lawyer) => lawyer.id ===parseInt(id) );
+  
+
     const {
       experience,
       image,
@@ -20,6 +24,15 @@ const LawyersDetails = () => {
       fees
        = [],
     } = singleLawyer || {};
+    const navigate=useNavigate()
+
+    const handleAppoint=()=>{
+     
+       addAppoint(singleLawyer)
+           navigate(`/bookings`)
+
+
+    }
     
 
     return (
@@ -33,7 +46,7 @@ const LawyersDetails = () => {
             <section>
                 <div className='flex gap-5 border rounded-lg border-[rgba(20,20,20,0.15)] p-6 m-5 '>
                     <div>
-                        <img src={image} alt="" />
+                        <img className='h-[350px] w-[300px]' src={image} alt="" />
                     </div>
                     <div>
                         <div>
@@ -74,7 +87,7 @@ const LawyersDetails = () => {
                     </div>
                     <p className='rounded-full bg-[rgba(255,160,0,0.1)] text-[#FFA000] p-0.5 text-center '>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
                     <div className='flex justify-center my-2'>
-                        <button className='bg-[#0EA106] text-white rounded-full px-8 py-1'>Book Appointment Now</button>
+                        <button  onClick={ handleAppoint}className='bg-[#0EA106] text-white rounded-full px-8 py-1'>Book Appointment Now</button>
                     </div>
                 </div>
             </section>

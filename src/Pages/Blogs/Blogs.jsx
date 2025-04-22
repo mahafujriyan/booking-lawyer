@@ -4,7 +4,7 @@ import Blog from '../Blog/Blog';
 
 const Blogs = () => {
     const blogs=useLoaderData()
-    console.log(blogs)
+   
 
     return (
         <div>

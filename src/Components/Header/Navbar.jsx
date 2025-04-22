@@ -15,7 +15,9 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><NavLink>Home</NavLink></li>
-      <li><NavLink>My-Bookings</NavLink></li>
+      <li><NavLink className={({ isActive }) =>
+        isActive ? 'text-green-500' : ''
+      } to='/bookings'>My-Bookings</NavLink></li>
       <li><NavLink
        className={({ isActive }) =>
         isActive ? 'text-green-500' : ''
@@ -41,7 +43,7 @@ const Navbar = () => {
       <li><NavLink>Home</NavLink></li>
       <li><NavLink  className={({ isActive }) =>
         isActive ? 'text-green-500' : ''
-      }>My-Bookings</NavLink></li>
+      } to='/bookings'>My-Bookings</NavLink></li>
       <li><NavLink  className={({ isActive }) =>
         isActive ? 'text-green-500' : ''
       } to='/blogs'>Blogs</NavLink></li>

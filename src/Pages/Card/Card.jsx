@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const Card = ({Lawyer}) => {
   const{experience,image,licenseNumber,name, 
     specialty,id
-  }=Lawyer||{}
+  }=Lawyer;
     return (
         <div className="w-full max-w-sm bg-white rounded-xl shadow-md p-4 mx-10">
         <div className="flex items-center space-x-4">
@@ -20,7 +20,7 @@ const Card = ({Lawyer}) => {
             <p className="text-sm text-gray-500">{specialty}</p>
             <p className="text-sm text-gray-400">License No: {licenseNumber}</p>
           <div className='my-2'>
-            <Link to={`/lawyers-details/:${id}`}>
+            <Link to={`/lawyers-details/${id}`}>
             <button className='text-[#176AE5]
             rounded-full border bg-[rgba(23,106,29,0.2)] p-1 '>
             View Details
