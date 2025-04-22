@@ -2,6 +2,8 @@ import React, {  useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Booking from '../Booking/Booking';
 import { getAppoint } from '../../Utility/Index';
+import Rechart from '../../Pages/Rechart/Rechart';
+
 
 
 const Bookings = () => {
@@ -31,6 +33,7 @@ const Bookings = () => {
     return (
         <div>
             <div>
+              <Rechart appoints={appoints}/>
 
             </div>
             <div className='flex flex-col justify-center items-center text-center my-10'>

@@ -1,4 +1,6 @@
 import React from 'react';
+import './Service.css'
+import CountUp from 'react-countup';
 
 const Service = () => {
     return (
@@ -10,23 +12,47 @@ const Service = () => {
          <div className='grid grid-cols-2 md:grid-cols-4 gap-2 mx-10 my-3'>
             <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
                 <img src="/asset/success-doctor.png" alt="" />
-                <h1 className='text-2xl font-bold'>199+</h1>
-                <p>Total Lawyer</p>
+               <div className='count-up'>
+                <h1 className='font-bold'>
+                <CountUp end={199} duration={1} />+
+
+                </h1>
+                
+               </div>
+               <p>Total Lawyer</p>
 
             </div>
             <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
                 <img src="/asset/success-review.png" alt="" />
-                <h1 className='text-2xl font-bold'>467+</h1>
+                <div className='count-up'>
+                <h1 className='font-bold'>
+                <CountUp end={467} duration={2} />+
+
+                </h1>
+                
+               </div>
                 <p>Total Reviews</p>
             </div>
             <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
                 <img src="/asset/success-patients.png" alt="" />
-                <h1 className='text-2xl font-bold'>1900+</h1>
+                <div className='count-up'>
+                <h1 className='font-bold'>
+                <CountUp end={1990} duration={2} />+
+
+                </h1>
+                
+               </div>
                 <p>Cases Initiated</p>
             </div>
             <div className='border border-[rgba(15,15,15,0.15)] bg-[rgba(15,15,15,0.05)] p-4 rounded-2xl'>
                 <img src="/asset/success-staffs.png" alt="" />
-                <h1 className='text-2xl font-bold'>300+</h1>
+                <div className='count-up'>
+                <h1 className='font-bold'>
+                <CountUp end={399} duration={2} />+
+
+                </h1>
+                
+               </div>
                 <p>Total Stuffs</p>
             </div>
          </div>
