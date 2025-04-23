@@ -24,9 +24,9 @@ const Footer = () => {
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4 font-bold text-white">
-          <Link><FaFacebookSquare /></Link>
-          <Link><FaInstagram /></Link>
-          <Link><FaXTwitter /></Link>
+          <Link to='https://www.facebook.com/share/1ZnPxFm3Tb/'><span><FaFacebookSquare /></span> </Link>
+          <Link to='https://www.instagram.com/mahafujhr?igsh=Y2p1MmQ1b21tMjNm'><FaInstagram /></Link>
+          <Link to='https://x.com/Mhriyan87'><FaXTwitter /></Link>
           <Link><FaYoutube /></Link>
            
            
