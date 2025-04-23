@@ -7,11 +7,12 @@ import { addAppoint } from '../../Utility/Index';
 
 const LawyersDetails = () => {
     const data = useLoaderData();
-    const { id } = useParams();
-    console.log(data,id)
+  
+    console.log(data)
 
   
-    const singleLawyer = data.find((lawyer) => lawyer.id ===parseInt(id) );
+   
+    
   
 
     const {
@@ -23,16 +24,18 @@ const LawyersDetails = () => {
       availableDays,
       fees
        = [],
-    } = singleLawyer || {};
+    } = data || {};
     const navigate=useNavigate()
 
     const handleAppoint=()=>{
      
-       addAppoint(singleLawyer)
+       addAppoint(data)
            navigate(`/bookings`)
 
 
     }
+   
+   
     
 
     return (
@@ -55,7 +58,7 @@ const LawyersDetails = () => {
                         <h1>{name}</h1>
                         <div className='flex gap-3.5'>
                             <button>{specialty}</button>
-                            <button>License No: {licenseNumber}</button>
+                            <button><span className='text-xl font-bold '>® </span> License No: {licenseNumber}</button>
                         </div>
                         <div className='flex items-center gap-2 flex-wrap mt-2'>
               <span className='font-semibold my-2'>Availability:</span>

@@ -14,7 +14,7 @@ const Service = () => {
                 <img src="/asset/success-doctor.png" alt="" />
                <div className='count-up'>
                 <h1 className='font-bold'>
-                <CountUp end={199} duration={1} />+
+                <CountUp end={199} duration={5} />+
 
                 </h1>
                 
@@ -26,7 +26,7 @@ const Service = () => {
                 <img src="/asset/success-review.png" alt="" />
                 <div className='count-up'>
                 <h1 className='font-bold'>
-                <CountUp end={467} duration={2} />+
+                <CountUp end={467} duration={5} />+
 
                 </h1>
                 
@@ -37,7 +37,7 @@ const Service = () => {
                 <img src="/asset/success-patients.png" alt="" />
                 <div className='count-up'>
                 <h1 className='font-bold'>
-                <CountUp end={1990} duration={2} />+
+                <CountUp end={1990} duration={5} />+
 
                 </h1>
                 
@@ -48,7 +48,7 @@ const Service = () => {
                 <img src="/asset/success-staffs.png" alt="" />
                 <div className='count-up'>
                 <h1 className='font-bold'>
-                <CountUp end={399} duration={2} />+
+                <CountUp end={399} duration={5} />+
 
                 </h1>
                 

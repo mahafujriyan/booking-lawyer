@@ -10,12 +10,13 @@ import LawyersDetails from '../Pages/LawyersDetails/LawyersDetails';
 import Blogs from '../Pages/Blogs/Blogs';
 import Contacts from '../Pages/Contacts/Contacts';
 import Bookings from '../Booksing/Bookings/Bookings';
-import { getAppoint } from '../Utility/Index';
+import DynamicError from '../Pages/DynamicError/DynamicError';
+
 
   export const router = createBrowserRouter([
     {
       path: "/",
-   Component:Roots,
+ element:<Roots/>,
    errorElement:<ErrorPages/>,
    children:[
     {
@@ -30,7 +31,26 @@ import { getAppoint } from '../Utility/Index';
     {
       path:'/lawyers-details/:id',
       element:<LawyersDetails/>,
-      loader:()=>fetch('../lawyers.json')
+      loader:async({params})=>{
+        const id=parseInt(params.id)
+        if(isNaN(id)||id.toString()!==params.id){
+          throw new Response(null,{status: 404,
+            statusText:`Invalid Id : ${params.id}`
+          })
+
+        }
+        const res= await fetch('../lawyers.json')
+        const data = await res.json();
+        const singleLawyer = data.find((lawyer) => lawyer.id ===id );
+        if(!singleLawyer){
+          throw new Response(null,{status: 404,
+            statusText:`No lawyer Found with this Id ${params.id}`
+          })
+  
+      }
+      return singleLawyer
+      },
+     errorElement:<DynamicError/>
 
      
     },
@@ -48,6 +68,7 @@ import { getAppoint } from '../Utility/Index';
     {
       path:'/bookings',
       element:<Bookings/>,
+      hydrateFallbackElement:<p>Loading, please wait</p>,
       loader:()=>fetch('../lawyers.json') 
     }
    
@@ -55,7 +76,7 @@ import { getAppoint } from '../Utility/Index';
   ]
 
     },
-     { path: '*', element: <ErrorPages /> }
+  
     
   ]);
  

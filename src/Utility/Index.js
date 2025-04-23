@@ -26,6 +26,6 @@ console.log(lawyer)
     const appoint=getAppoint()
     const remainingAppoint=appoint.filter(lawyer=>lawyer.id!==id)
     localStorage.setItem('appoint',JSON.stringify(remainingAppoint))
-    toast.success('Removed Successfully')
+    toast.error('Removed Successfully')
   }
 

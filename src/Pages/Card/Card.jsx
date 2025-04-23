@@ -18,7 +18,7 @@ const Card = ({Lawyer}) => {
             </div>
             <h2 className="text-lg font-semibold">{name}</h2>
             <p className="text-sm text-gray-500">{specialty}</p>
-            <p className="text-sm text-gray-400">License No: {licenseNumber}</p>
+            <p className="text-sm text-gray-400"><span className='text-xl font-bold  '>®</span> License No: {licenseNumber}</p>
           <div className='my-2'>
             <Link to={`/lawyers-details/${id}`}>
             <button className='text-[#176AE5]

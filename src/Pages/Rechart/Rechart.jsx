@@ -11,13 +11,14 @@ const Rechart = ({ appoints }) => {
 
   const ChartBar = (props) => {
     const { x, y, width, height, fill } = props;
-    const path = `
-      M${x},${y + height}
-      C${x + width / 2},${y - height}
-       ${x + width / 2},${y - height}
-       ${x + width},${y + height}
-      Z
-    `;
+     const path =
+     
+       `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+      ${x + width / 2}, ${y}
+      C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+      Z`;
+    
+  
     return <path d={path} fill={fill} />;
   };
   const COLORS = ['#1E90FF', '#FFA500', '#00C49F', '#FF8042', '#8884d8', '#FF6363', '#4CAF50'];
@@ -26,7 +27,7 @@ const Rechart = ({ appoints }) => {
     fees: parseInt(appoint.fees),
     fill: COLORS[index % COLORS.length], 
   }));
-  if (chartData.length === 0) return null;
+  if (chartData.length === 0) return null; 
 
 
 
