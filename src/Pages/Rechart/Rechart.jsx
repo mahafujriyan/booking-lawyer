@@ -7,7 +7,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,Cell } from '
       
 
 const Rechart = ({ appoints }) => {
-  console.log(appoints)
+
 
   const ChartBar = (props) => {
     const { x, y, width, height, fill } = props;

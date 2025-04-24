@@ -7,7 +7,7 @@ import { toast } from "react-toastify"
     return []
   }
   export const addAppoint = lawyer => {
-console.log(lawyer)
+
     const appoint = getAppoint()
     const isExist = appoint.find(p => p.id === lawyer.id)
     if (isExist){

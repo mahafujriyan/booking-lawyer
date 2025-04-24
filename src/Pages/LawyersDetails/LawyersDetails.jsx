@@ -8,7 +8,7 @@ import { addAppoint } from '../../Utility/Index';
 const LawyersDetails = () => {
     const data = useLoaderData();
   
-    console.log(data)
+ 
 
   
    
