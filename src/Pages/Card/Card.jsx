@@ -8,7 +8,7 @@ const Card = ({Lawyer}) => {
     return (
         <div className="w-full max-w-sm bg-white rounded-xl shadow-md p-4 mx-10">
         <div className="flex items-center space-x-4">
-          <div className="w-16 h-16 bg-gray-300 rounded-md">
+          <div className="w-16 h-15 bg-gray-300 rounded-md">
             <img src={image} alt="" />
           </div>
           <div>

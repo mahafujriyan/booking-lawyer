@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData, useNavigate, useParams } from 'react-router';
+import { useLoaderData, useNavigate } from 'react-router';
 
 import { addAppoint } from '../../Utility/Index';
 
