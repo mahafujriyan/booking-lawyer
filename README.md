@@ -13,7 +13,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-##puyrpose 
+## puyrpose 
 to make a user pain free lawyrs servise . A user can appoint his lawiers by a click 
 ## install package  tecnology 
   
